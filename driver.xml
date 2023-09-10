@@ -1,0 +1,81 @@
+<devicedata>
+	<copyright>BP</copyright>
+	<creator>BP</creator>
+	<manufacturer>BP</manufacturer>
+	<name>HA Switch</name>
+	<model>HA Switch</model>
+	<created>09/10/2023 12:00</created>
+	<modified>09/10/2023 12:00</modified>
+	<version>1</version>
+	<control>lua_gen</control>
+	<controlmethod>IP</controlmethod>
+	<driver>DriverWorks</driver>
+	<combo>true</combo>
+	<composer_categories>
+		<category>other</category>
+	</composer_categories>
+	<config>
+		<script jit="1" file="Control4-HA-Base/driver.lua"/>
+		<properties>
+			<property>
+				<name>Entity ID</name>
+				<type>STRING</type>
+				<readonly>false</readonly>
+				<default>switch.bedroom_sleep_fan</default>
+			</property>
+			<property>
+				<name>Driver Version</name>
+				<default></default>
+				<type>STRING</type>
+				<readonly>true</readonly>
+			</property>
+			<property>
+				<name>Debug Mode</name>
+				<type>LIST</type>
+				<items>
+					<item>Off</item>
+					<item>On</item>
+				</items>
+				<default>Off</default>
+				<readonly>false</readonly>
+			</property>
+		</properties>
+		<actions>
+		</actions>
+		<commands/>
+	</config>
+	<proxy name="HA Switch">other</proxy>
+	<capabilities>
+	</capabilities>
+	<events/>
+	<connections>
+		<connection>
+			<id>999</id>
+			<facing>1</facing>
+			<type>1</type>
+			<connectionname>Device Link</connectionname>
+			<consumer>True</consumer>
+			<classes>
+				<class>
+					<classname>HA_DEVICE</classname>
+					<autobind>True</autobind>
+				</class>
+			</classes>
+		</connection>
+		<connection>
+			<id>1</id>
+			<facing>1</facing>
+			<connectionname>Relay</connectionname>
+			<type>1</type>
+			<consumer>false</consumer>
+			<audiosource>false</audiosource>
+			<videosource>false</videosource>
+			<linelevel>false</linelevel>
+			<classes>
+				<class>
+					<classname>RELAY</classname>
+				</class>
+			</classes>
+		</connection>
+	</connections>
+</devicedata>
