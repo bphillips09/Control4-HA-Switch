@@ -54,8 +54,13 @@ function RFP.DO_CLICK(idBinding, strCommand, tParams)
 end
 
 function SwitchControl(service)
+    local domain = "switch"
+    if string.find(EntityID, "input_boolean.") then
+        domain = "input_boolean"
+    end
+
     local switchServiceCall = {
-        domain = "switch",
+        domain = domain,
         service = service,
 
         service_data = {},
