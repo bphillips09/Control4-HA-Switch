@@ -5,8 +5,8 @@
 	<name>HA Switch</name>
 	<model>HA Switch</model>
 	<created>09/10/2023 12:00</created>
-	<modified>03/05/2024 12:00</modified>
-	<version>104</version>
+	<modified>01/12/2025 12:00</modified>
+	<version>105</version>
 	<control>lua_gen</control>
 	<controlmethod>IP</controlmethod>
 	<driver>DriverWorks</driver>
@@ -42,7 +42,20 @@
 		</properties>
 		<actions>
 		</actions>
-		<commands/>
+		<commands>
+			<command>
+				<name>Turn On</name>
+				<description>Turn Switch On</description>
+				<params>
+				</params>
+			</command>
+			<command>
+				<name>Turn Off</name>
+				<description>Turn Switch Off</description>
+				<params>
+				</params>
+			</command>
+		</commands>
 	</config>
 	<proxy name="HA Switch">other</proxy>
 	<capabilities>

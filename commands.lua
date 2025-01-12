@@ -24,6 +24,14 @@ function RFP.OPEN(idBinding, strCommand)
     SwitchControl("turn_off")
 end
 
+function EC.Turn_On(tParams)
+    SwitchControl("turn_on")
+end
+
+function EC.Turn_Off(tParams)
+    SwitchControl("turn_off")
+end
+
 function RFP.BUTTON_ACTION(idBinding, strCommand, tParams)
     if tParams.ACTION == "2" then
         if tParams.BUTTON_ID == "0" then
