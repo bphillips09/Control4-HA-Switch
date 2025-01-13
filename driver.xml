@@ -6,7 +6,7 @@
 	<model>HA Switch</model>
 	<created>09/10/2023 12:00</created>
 	<modified>01/12/2025 12:00</modified>
-	<version>105</version>
+	<version>106</version>
 	<control>lua_gen</control>
 	<controlmethod>IP</controlmethod>
 	<driver>DriverWorks</driver>
@@ -45,13 +45,13 @@
 		<commands>
 			<command>
 				<name>Turn On</name>
-				<description>Turn Switch On</description>
+				<description>Turn NAME On</description>
 				<params>
 				</params>
 			</command>
 			<command>
 				<name>Turn Off</name>
-				<description>Turn Switch Off</description>
+				<description>Turn NAME Off</description>
 				<params>
 				</params>
 			</command>
